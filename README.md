@@ -7,7 +7,7 @@ Démo: [Ouvrez le navigateur de votre mobile](http://tappauline.urldemarde.com)
 
 ## Note
 
-This was only tested on an iPhone 5. Expect it to hilariously fail on other devices.
+Ce jeux a été testé sur un IPhone 5, un IPad 2
 
 ## License
 
