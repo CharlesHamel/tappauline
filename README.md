@@ -1,8 +1,9 @@
-# Pauline autour du monde
+# Tap Pauline
+[TapPauline.urldemarde.com](http://tappauline.urldemarde.com)
 
 Un clone du jeux très populaire [Flappy Bird](http://en.wikipedia.org/wiki/Flappy_Bird) créer avec le [framework Phaser](http://phaser.io/).
 
-Démo: [Ouvrez le navigateur de votre mobile](http://pq.urldemarde.com)
+Démo: [Ouvrez le navigateur de votre mobile](http://tappauline.urldemarde.com)
 
 ## Note
 
