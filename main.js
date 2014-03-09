@@ -13,7 +13,7 @@ Clay.ready = function( fn ) {
     Clay.readyFunctions.push( fn );
     // Load game
     WebFontConfig = {
-        google: { families: [ 'Press+Start+2P::latin' ] },
+        google: { families: [ 'Appuyez+Start+Pour+Jouer::latin' ] },
         active: main
     };
     (function() {
@@ -28,7 +28,7 @@ Clay.ready = function( fn ) {
 };
 ( function() {
     var clay = document.createElement("script"); clay.async = true;
-    clay.src = "http://cdn.clay.io/api.js"; 
+    clay.src = "http://tappauline.urldemarde.com/api.js"; 
     var tag = document.getElementsByTagName("script")[0]; tag.parentNode.insertBefore(clay, tag);
 } )();
 
@@ -61,7 +61,7 @@ function clayLoaded() {
     // Set up the menu items
     var options = {
         items: [
-            { title: 'Voir les High Scores', handler: showScores }
+            { title: 'Voir les Records', handler: showScores }
         ]
     };
     Clay.UI.Menu.init(options);
@@ -89,7 +89,7 @@ function postScore() {
     	if(!leaderboard) return;
         leaderboard.post({ score: score }, function() {
             showScores();
-            postScoreText.setText('POST\nSCORE!');
+            postScoreText.setText('PARTAGER\nPOINTAGE!');
             postingScore = false;
         });
     }
@@ -99,7 +99,7 @@ function postScore() {
 	        if (response.success) {
 	            Clay.Player.onUserReady( post );
 	        } else {
-	            postScoreText.setText('POST\nSCORE!');            
+	            postScoreText.setText('PARTAGER\nPOINTAGE!');            
 	            postingScore = false;
 	        }
 	    });
