@@ -33,7 +33,7 @@ Clay.ready = function( fn ) {
 } )();
 
 if(typeof cards !== 'undefined' && cards.kik)
-    window.location.href = 'card://flirtybird.clay.io';
+    window.location.href = 'card://tappauline.urldemarde.com';
 
 function main() {
 
@@ -61,7 +61,7 @@ function clayLoaded() {
     // Set up the menu items
     var options = {
         items: [
-            { title: 'View High Scores', handler: showScores }
+            { title: 'Voir les High Scores', handler: showScores }
         ]
     };
     Clay.UI.Menu.init(options);
@@ -76,7 +76,7 @@ function showScores() {
 }
 
 function kikThis() {
-    Clay.Kik.post( { message: 'I just scored ' + score + ' in Heavy Bird! Think you can beat my score?', title: 'Heavy Bird!' } );
+    Clay.Kik.post( { message: 'Je viens de faire un score de ' + score + ' à Tap Pauline! Croyez-vous pouvoir me battre?', title: 'Tap Pauline!' } );
 }
 
 function postScore() {
@@ -171,9 +171,9 @@ function create() {
     credits = game.add.text(
         game.world.width / 2,
         10,
-        'marksteve.com/dtmb\n@themarksteve',
+        'tappauline.urldemarde.com/',
         {
-            font: '8px "Press Start 2P"',
+            font: '8px "Appuyez sur Start pour Jouer"',
             fill: '#fff',
             align: 'center'
         }
@@ -201,7 +201,7 @@ function create() {
         game.world.height / 5,
         "",
         {
-            font: '32px "Press Start 2P"',
+            font: '32px "Appuyez sur Start pour Jouer"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 8,
@@ -215,7 +215,7 @@ function create() {
         game.world.height - game.world.height / 4,
         "",
         {
-            font: '16px "Press Start 2P"',
+            font: '16px "Appuyez sur Start pour Jouer"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 8,
@@ -229,7 +229,7 @@ function create() {
         game.world.height / 3,
         "",
         {
-            font: '24px "Press Start 2P"',
+            font: '24px "Appuyez sur Start pour Jouer"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 8,
@@ -244,7 +244,7 @@ function create() {
         game.world.height / 2,
         "",
         {
-            font: '20px "Press Start 2P"',
+            font: '20px "Appuyez sur Start pour Jouer"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 8,
@@ -263,7 +263,7 @@ function create() {
         game.world.height / 2,
         "",
         {
-            font: '20px "Press Start 2P"',
+            font: '20px "Appuyez sur Start pour Jouer"',
             fill: '#fff',
             stroke: '#430',
             strokeThickness: 8,
@@ -416,7 +416,7 @@ function addScore(_, inv) {
 
 function setGameOver() {
     gameOver = true;
-    instText.setText("TOUCH BIRD\nTO TRY AGAIN");
+    instText.setText("TOUCHEZ PAULINE\nPOUR RECOMMENCER");
     instText.renderable = true;
     var hiscore = window.localStorage.getItem('hiscore');
     hiscore = hiscore ? hiscore : score;
